@@ -456,19 +456,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const dateElement = document.getElementById('current-date');
     dateElement.textContent = getCurrentDate();
 });
- function sendEmail(){
-  Email.send({
-    Host:"smpt.gmail.com",
-    Username:"anupama.dey.enkwaries.gmail.com",
-    Password:"@Enkwaries2024",
-    To:"anupama.dey.enkwaries.gmail.com",
-    From:document.getElementById("email").value,
-    Subject:"New Contact  Form Enquiry",
-    Body:"And this is body",
-  }).then(
-    message => alert("send successfully")
-  );
- }
+
 
 
 
